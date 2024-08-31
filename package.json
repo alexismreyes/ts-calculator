@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && cp index.html dist/index.html && cp style.css dist/style.css",
+    "build": "tsc && cp index.html dist/index.html && cp style.css dist/style.css && cp index.js dist/index.js",
     "watch": "tsc --watch",
     "dev": "live-server --entry-file=dist/index.html --mount=/:./dist",
     "start": "node dist/index.js"
