@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp index.html dist/index.html",
     "watch": "tsc --watch",
-    "dev": "live-server",
-    "start": "nodemon dist/index.js"
+    "dev": "live-server --entry-file=dist/index.html --mount=/:./dist",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
